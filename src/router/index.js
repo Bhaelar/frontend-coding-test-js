@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
+import Assessment from '../views/Assessment.vue'
 
 const mainRoutes = [
   {
@@ -9,6 +10,12 @@ const mainRoutes = [
     name: 'Home',
     props: true,
     component: Home,
+  },
+  {
+    path: '/assessment',
+    name: 'Assessment',
+    props: true,
+    component: Assessment,
   },
 ]
 
@@ -20,6 +27,7 @@ const routes = [
     props: true,
     component: Error,
   },
+  
   {
     path: '/',
     props: true,
